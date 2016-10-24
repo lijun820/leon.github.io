@@ -77,18 +77,20 @@
 
 
 
-<meta name="description" content="有一段时间没有看RN了，快忘得差不多了。看的有些费劲了，之前因为数据请求加密问题就断了，现在比较空闲就试着捡起来希望通过博客的记录。对RN更加深刻。这边的开发平台是window，对应的是安卓所以文中所有内容都是基于安卓来讲的其实安卓和IOS基本差不多。RN的思想就是learn once,write everywhere跨平台的。">
+<meta name="description" content="RN布局用的是flexbox（弹性布局），如果对flex布局还不了解请点击这里Flex 布局教程这里我整理了下常用的几种布局">
 <meta property="og:type" content="article">
-<meta property="og:title" content="RN入门准备">
-<meta property="og:url" content="http://yoursite.com/2016/10/20/RN入门准备/index.html">
+<meta property="og:title" content="RN常用布局">
+<meta property="og:url" content="http://yoursite.com/2016/10/24/RN常用布局/index.html">
 <meta property="og:site_name" content="Leon Li">
-<meta property="og:description" content="有一段时间没有看RN了，快忘得差不多了。看的有些费劲了，之前因为数据请求加密问题就断了，现在比较空闲就试着捡起来希望通过博客的记录。对RN更加深刻。这边的开发平台是window，对应的是安卓所以文中所有内容都是基于安卓来讲的其实安卓和IOS基本差不多。RN的思想就是learn once,write everywhere跨平台的。">
-<meta property="og:image" content="http://yoursite.com/images/rnstudy01.jpg">
-<meta property="og:updated_time" content="2016-10-20T09:19:48.237Z">
+<meta property="og:description" content="RN布局用的是flexbox（弹性布局），如果对flex布局还不了解请点击这里Flex 布局教程这里我整理了下常用的几种布局">
+<meta property="og:image" content="http://yoursite.com/images/flex-layout.png">
+<meta property="og:image" content="http://yoursite.com/images/flex-layout2.jpg">
+<meta property="og:image" content="http://yoursite.com/images/flex-layout1.png">
+<meta property="og:updated_time" content="2016-10-24T07:43:59.480Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="RN入门准备">
-<meta name="twitter:description" content="有一段时间没有看RN了，快忘得差不多了。看的有些费劲了，之前因为数据请求加密问题就断了，现在比较空闲就试着捡起来希望通过博客的记录。对RN更加深刻。这边的开发平台是window，对应的是安卓所以文中所有内容都是基于安卓来讲的其实安卓和IOS基本差不多。RN的思想就是learn once,write everywhere跨平台的。">
-<meta name="twitter:image" content="http://yoursite.com/images/rnstudy01.jpg">
+<meta name="twitter:title" content="RN常用布局">
+<meta name="twitter:description" content="RN布局用的是flexbox（弹性布局），如果对flex布局还不了解请点击这里Flex 布局教程这里我整理了下常用的几种布局">
+<meta name="twitter:image" content="http://yoursite.com/images/flex-layout.png">
 
 
 
@@ -109,9 +111,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/10/20/RN入门准备/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/24/RN常用布局/"/>
 
-  <title> RN入门准备 | Leon Li </title>
+  <title> RN常用布局 | Leon Li </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -251,7 +253,7 @@
             
             
               
-                RN入门准备
+                RN常用布局
               
             
           </h1>
@@ -263,8 +265,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-20T00:00:00+08:00" content="2016-10-20">
-              2016-10-20
+            <time itemprop="dateCreated" datetime="2016-10-24T11:48:00+08:00" content="2016-10-24">
+              2016-10-24
             </time>
           </span>
 
@@ -293,8 +295,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/10/20/RN入门准备/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/20/RN入门准备/" itemprop="commentsCount"></span>
+                <a href="/2016/10/24/RN常用布局/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/24/RN常用布局/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -317,17 +319,35 @@
       
 
       
-        <p>有一段时间没有看RN了，快忘得差不多了。看的有些费劲了，之前因为数据请求加密问题就断了，现在比较空闲就试着捡起来<br>希望通过博客的记录。对RN更加深刻。<br>这边的开发平台是window，对应的是安卓<br>所以文中所有内容都是基于安卓来讲的<br>其实安卓和IOS基本差不多。RN的思想就是learn once,write everywhere跨平台的。<br><a id="more"></a></p>
-<h3 id="开发准备工作"><a href="#开发准备工作" class="headerlink" title="开发准备工作"></a>开发准备工作</h3><p><strong>环境搭建</strong></p>
-<blockquote>
-<p>这个<a href="http://reactnative.cn/docs/0.35/getting-started.html#content" target="_blank" rel="external">RN官网</a>已经介绍的很清楚了，有视频也有文字教程，搭建环境最好自己亲自来搭建，整个过程下来你会很清楚，基本上你只要认认真真的熟悉一次后面基本都难不倒你</p>
-</blockquote>
-<p><strong>安卓手机一部</strong></p>
-<blockquote>
-<p>建议使用真机，使用模拟器也可以，不过模拟器上和真机上总归有些细微的不一样</p>
-<p>应用如何在设备上运行不在详细的说了，这些东西自己不折腾下<br>别人教你怎么做之后下次你还是不会。</p>
-</blockquote>
-<p>出现下图，祝贺你，你成功的运行了应用。<br><img src="/images/rnstudy01.jpg" alt="alt text"></p>
+        <p>RN布局用的是flexbox（弹性布局），如果对flex布局还不了解请点击这里<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool" target="_blank" rel="external">Flex 布局教程</a><br>这里我整理了下常用的几种布局</p>
+<a id="more"></a>
+<h3 id="上下布局"><a href="#上下布局" class="headerlink" title="上下布局"></a>上下布局</h3><ul>
+<li>jsx结构：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;View style=&#123;styles.wrap&#125;&gt;</div><div class="line">    &lt;View style=&#123;styles.top&#125;&gt;</div><div class="line">        &lt;Text style=&#123;styles.text&#125;&gt;</div><div class="line">            头部信息</div><div class="line">        &lt;/Text&gt;</div><div class="line">    &lt;/View&gt;</div><div class="line">    &lt;View style=&#123;styles.center&#125;&gt;</div><div class="line">        &lt;Text style=&#123;styles.text&#125;&gt;</div><div class="line">            这是内容区&#123;&apos;\n&apos;&#125;</div><div class="line">        &lt;/Text&gt;</div><div class="line">    &lt;/View&gt;</div><div class="line">    &lt;View style=&#123;styles.right&#125;&gt;</div><div class="line">        &lt;Text style=&#123;styles.text&#125;&gt;</div><div class="line">            尾部信息</div><div class="line">        &lt;/Text&gt;</div><div class="line">    &lt;/View&gt;</div><div class="line">&lt;/View&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>css</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">wrap: &#123;</div><div class="line">        flex:1,</div><div class="line">        flexDirection:&apos;column&apos;</div><div class="line">        &#125;,</div><div class="line">    top:&#123;</div><div class="line">        height: 40,</div><div class="line">        backgroundColor: &apos;#008E59&apos;</div><div class="line">    &#125;,</div><div class="line">    center:&#123;</div><div class="line">        flex:1,</div><div class="line">        backgroundColor: &apos;#64BA9D&apos;</div><div class="line">    &#125;,</div><div class="line">    right:&#123;</div><div class="line">        height: 40,</div><div class="line">        backgroundColor: &apos;#a9ea00&apos;</div><div class="line">    &#125;,</div><div class="line">    text:&#123;</div><div class="line">        padding:10,</div><div class="line">        fontSize:16,</div><div class="line">        color:&apos;#fff&apos;,</div><div class="line">        lineHeight:20,</div><div class="line">        textAlign: &apos;center&apos;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p><img src="/images/flex-layout.png" alt="image"></p>
+<h3 id="左右布局"><a href="#左右布局" class="headerlink" title="左右布局"></a>左右布局</h3><ul>
+<li>jsx结构</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;View style=&#123;styles.wrap&#125;&gt;</div><div class="line">        &lt;View style=&#123;styles.left&#125;&gt;</div><div class="line">            &lt;Text style=&#123;styles.text&#125;&gt;</div><div class="line">                左侧</div><div class="line">            &lt;/Text&gt;</div><div class="line">        &lt;/View&gt;</div><div class="line">        &lt;View style=&#123;styles.right&#125;&gt;</div><div class="line">            &lt;Text style=&#123;styles.text&#125;&gt;</div><div class="line">                右侧</div><div class="line">            &lt;/Text&gt;</div><div class="line">        &lt;/View&gt;</div><div class="line">&lt;/View&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>css</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">wrap: &#123;</div><div class="line">        flex:1,</div><div class="line">        flexDirection:&apos;row&apos;</div><div class="line">        &#125;,</div><div class="line">    left:&#123;</div><div class="line">        flex:1,</div><div class="line">        backgroundColor: &apos;#008E59&apos;</div><div class="line">    &#125;,</div><div class="line">    right:&#123;</div><div class="line">        flex:1,</div><div class="line">        backgroundColor: &apos;#a9ea00&apos;</div><div class="line">    &#125;,</div><div class="line">    text:&#123;</div><div class="line">        padding:10,</div><div class="line">        fontSize:16,</div><div class="line">        color:&apos;#fff&apos;,</div><div class="line">        lineHeight:20,</div><div class="line">        textAlign: &apos;center&apos;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p><img src="/images/flex-layout2.jpg" alt="image"></p>
+<h3 id="左中右布局"><a href="#左中右布局" class="headerlink" title="左中右布局"></a>左中右布局</h3><ul>
+<li>jsx结构</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;View style=&#123;styles.wrap&#125;&gt;</div><div class="line">    &lt;View style=&#123;styles.left&#125;&gt;</div><div class="line">        &lt;Text style=&#123;styles.text&#125;&gt;</div><div class="line">            左侧区</div><div class="line">        &lt;/Text&gt;</div><div class="line">    &lt;/View&gt;</div><div class="line">    &lt;View style=&#123;styles.center&#125;&gt;</div><div class="line">        &lt;Text style=&#123;styles.text&#125;&gt;</div><div class="line">            内容区&#123;&apos;\n&apos;&#125;</div><div class="line">        &lt;/Text&gt;</div><div class="line">    &lt;/View&gt;</div><div class="line">    &lt;View style=&#123;styles.right&#125;&gt;</div><div class="line">        &lt;Text style=&#123;styles.text&#125;&gt;</div><div class="line">            右侧</div><div class="line">        &lt;/Text&gt;</div><div class="line">    &lt;/View&gt;</div><div class="line">&lt;/View&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>css</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">wrap: &#123;</div><div class="line">        flex:1,</div><div class="line">        flexDirection:&apos;row&apos;</div><div class="line">        &#125;,</div><div class="line">    left:&#123;</div><div class="line">        width: 80,</div><div class="line">        backgroundColor: &apos;#008E59&apos;</div><div class="line">    &#125;,</div><div class="line">    center:&#123;</div><div class="line">        flex:1,</div><div class="line">        backgroundColor: &apos;#64BA9D&apos;</div><div class="line">    &#125;,</div><div class="line">    right:&#123;</div><div class="line">        width: 80,</div><div class="line">        backgroundColor: &apos;#a9ea00&apos;</div><div class="line">    &#125;,</div><div class="line">    text:&#123;</div><div class="line">        padding:10,</div><div class="line">        fontSize:16,</div><div class="line">        color:&apos;#fff&apos;,</div><div class="line">        lineHeight:20,</div><div class="line">        textAlign: &apos;center&apos;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<p><img src="/images/flex-layout1.png" alt="image"></p>
 
       
     </div>
@@ -353,17 +373,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/10/18/陪伴/" rel="next" title="陪伴">
-                <i class="fa fa-chevron-left"></i> 陪伴
+              <a href="/2016/10/21/RN尺寸设置/" rel="next" title="RN尺寸设置">
+                <i class="fa fa-chevron-left"></i> RN尺寸设置
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/21/RN尺寸设置/" rel="prev" title="RN尺寸设置">
-                RN尺寸设置 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -389,8 +405,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/10/20/RN入门准备/"
-           data-title="RN入门准备" data-url="http://yoursite.com/2016/10/20/RN入门准备/">
+      <div class="ds-thread" data-thread-key="2016/10/24/RN常用布局/"
+           data-title="RN常用布局" data-url="http://yoursite.com/2016/10/24/RN常用布局/">
       </div>
     
   </div>
@@ -540,7 +556,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#开发准备工作"><span class="nav-number">1.</span> <span class="nav-text">开发准备工作</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#上下布局"><span class="nav-number">1.</span> <span class="nav-text">上下布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#左右布局"><span class="nav-number">2.</span> <span class="nav-text">左右布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#左中右布局"><span class="nav-number">3.</span> <span class="nav-text">左中右布局</span></a></li></ol></div>
             
           </div>
         </section>
